@@ -4,8 +4,8 @@ from nltk.tokenize import sent_tokenize
 from konlpy.tag import Okt
 okt = Okt()
 
-txt = "D:\GOD's folder\programming\school pj\창회선배 자료\Test-earthquake.txt"
-with open(txt, "r") as filetoread:
+txt = r"E:\Programming\python\창회선배스터디\창회선배 자료\텍스트자료\Test-earthquake.txt"
+with open(txt, "r", encoding='utf-8') as filetoread:
     fileread = filetoread.read()
 
 token = re.findall(r'\b\w[\w-]*\b', fileread)
